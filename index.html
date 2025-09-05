@@ -1,1135 +1,611 @@
 <!DOCTYPE html>
-<html lang="id" data-theme="light">
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <meta name="description" content="Landing page premium hijab Meggie Bergo Inner - Hijab Kaos Rayon Premium dengan inner tali, harga diskon, galeri, testimoni, dan order form terintegrasi.">
-  <meta name="keywords" content="meggie bergo inner, hijab premium, kaos rayon, inner tali, bergo, orderonline, hijab diskon, hijab wanita">
-  <meta name="author" content="nexcoofficial">
-  <!-- Open Graph -->
-  <meta property="og:title" content="Meggie Bergo Inner - Hijab Kaos Rayon Premium">
-  <meta property="og:description" content="Hijab bergo premium dengan inner tali, diskon Rp 155.000, galeri, testimoni, dan order form terintegrasi.">
-  <meta property="og:image" content="https://cdn.orderonline.id/uploads/images_8837391757066736124.png">
-  <meta property="og:url" content="https://mila.orderonline.id/meggie-bergo-inner">
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Meggie Bergo Inner - Hijab Kaos Rayon Premium">
-  <meta name="twitter:image" content="https://cdn.orderonline.id/uploads/images_8837391757066736124.png">
-  <!-- Schema.org markup -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meggie Bergo Inner – Hijab Premium Instant</title>
+  <meta name="description" content="Meggie Bergo Inner – Hijab kaos rayon premium dengan inner tali terintegrasi. Nyaman, elegan, dan praktis untuk aktivitas sehari-hari." />
+  <meta name="keywords" content="hijab instan, hijab bergo, hijab premium, meggi bergo inner" />
+  <meta property="og:title" content="Meggie Bergo Inner – Hijab Premium Instant" />
+  <meta property="og:description" content="Tampil elegan dalam hitungan detik dengan bahan kaos rayon premium dan inner tali terintegrasi." />
+  <meta property="og:image" content="https://cdn.orderonline.id/uploads/images_8837391757066736124.png" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind + AOS + Feather Icons -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- Lightbox -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+  <!-- Schema Markup -->
   <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Product",
-      "name": "Meggie Bergo Inner",
-      "image": [
-        "https://cdn.orderonline.id/uploads/images_8837391757066736124.png"
-      ],
-      "description": "Meggie Bergo Instant Inner merupakan hijab bergo bahan kaos rayon premium yang menyatu dengan inner tali di dalamnya sehingga membuat penampilan terlihat simple dan sat set sat set.",
-      "brand": "Mila",
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "IDR",
-        "price": "155000",
-        "availability": "InStock",
-        "url": "https://mila.orderonline.id/meggie-bergo-inner"
-      }
+  {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Meggie Bergo Inner",
+    "image": "https://cdn.orderonline.id/uploads/images_8837391757066736124.png",
+    "description": "Hijab kaos rayon premium dengan inner tali terintegrasi.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Meggie Bergo"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://meggiebergo.com",
+      "priceCurrency": "IDR",
+      "price": "155000",
+      "priceValidUntil": "2025-12-31",
+      "availability": "https://schema.org/InStock"
     }
+  }
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-  <title>Meggie Bergo Inner - Premium Hijab Kaos Rayon</title>
-  <link rel="icon" href="https://cdn.orderonline.id/uploads/images_8837391757066736124.png">
+
   <style>
     :root {
-      --color-teal: #004d4d;
-      --color-hijau: #009688;
-      --color-emas: #d4af37;
-      --color-krem: #f5f5dc;
-      --color-putih: #ffffff;
-      --color-dark: #222;
-      --color-shadow: rgba(0,77,77,0.08);
-      --font-heading: 'Playfair Display', serif;
-      --font-body: 'Inter', sans-serif;
-      --radius: 1.5rem;
-      --glass-blur: 16px;
-      --glass-bg: rgba(255,255,255,0.24);
-      --glass-dark-bg: rgba(34,34,34,0.24);
-      --transition: 0.3s cubic-bezier(.33,1.6,.58,1);
+      --teal-deep: #004d4d;
+      --islamic-green: #009688;
+      --gold: #d4af37;
+      --cream: #f5f5dc;
+      --white: #ffffff;
     }
-    html {
-      scroll-behavior: smooth;
-    }
+
     body {
-      margin: 0;
-      font-family: var(--font-body);
-      font-size: clamp(1rem,2vw,1.15rem);
-      background: linear-gradient(135deg, var(--color-teal) 0%, var(--color-hijau) 100%);
-      color: var(--color-dark);
-      min-height: 100vh;
-      transition: background 0.4s;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--cream);
+      color: var(--teal-deep);
     }
-    [data-theme="dark"] body {
-      background: linear-gradient(135deg, #222 0%, var(--color-teal) 100%);
-      color: var(--color-putih);
+
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
     }
-    /* Glassmorphism */
-    .glass {
-      background: var(--glass-bg);
-      backdrop-filter: blur(var(--glass-blur));
-      -webkit-backdrop-filter: blur(var(--glass-blur));
-      border-radius: var(--radius);
-      box-shadow: 0 8px 32px var(--color-shadow);
-    }
-    [data-theme="dark"] .glass {
-      background: var(--glass-dark-bg);
-      box-shadow: 0 8px 32px rgba(0,0,0,0.18);
-    }
-    /* Utility */
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 2vw;
-    }
-    section {
-      margin-bottom: 4rem;
-    }
-    .section-title {
-      font-family: var(--font-heading);
-      font-weight: 900;
-      font-size: clamp(2rem, 3vw, 3.2rem);
-      color: var(--color-teal);
-      margin-bottom: 1rem;
-      letter-spacing: -1px;
-    }
-    [data-theme="dark"] .section-title {
-      color: var(--color-emas);
-    }
-    .section-subtitle {
-      font-family: var(--font-heading);
-      font-weight: 400;
-      font-size: clamp(1.2rem, 2vw, 1.5rem);
-      color: var(--color-hijau);
-      margin-bottom: 2rem;
-    }
-    [data-theme="dark"] .section-subtitle {
-      color: var(--color-putih);
-    }
-    /* HERO SECTION */
-    .hero {
+
+    .hero-bg {
+      background-image: url('https://cdn.orderonline.id/uploads/images_8837391757066736124.png');
+      background-size: cover;
+      background-position: center;
       position: relative;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: url('https://cdn.orderonline.id/uploads/images_8837391757066736124.png') center/cover no-repeat;
-      overflow: hidden;
     }
+
     .hero-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, rgba(0,77,77,0.8) 0%, rgba(0,150,136,0.6) 100%);
-      z-index: 1;
-      pointer-events: none;
+      background: linear-gradient(rgba(0, 77, 77, 0.7), rgba(0, 150, 136, 0.5));
     }
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      max-width: 600px;
-      width: 100%;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 4rem 2rem;
-      text-align: center;
+
+    .glass-form {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 12px;
+      padding: 24px;
     }
-    .hero-headline {
-      font-family: var(--font-heading);
-      font-weight: 900;
-      font-size: clamp(2.5rem, 5vw, 4rem);
-      color: var(--color-putih);
-      text-shadow: 0 3px 16px rgba(0,0,0,0.18);
-      margin-bottom: 1.5rem;
-      line-height: 1.05;
-      letter-spacing: -2px;
+
+    .discount-badge {
+      background-color: var(--gold);
+      color: #000;
+      font-weight: bold;
+      padding: 4px 10px;
+      border-radius: 4px;
     }
-    .hero-subheadline {
-      font-family: var(--font-heading);
-      font-size: clamp(1.2rem, 2vw, 1.7rem);
-      color: var(--color-emas);
-      margin-bottom: 2rem;
-      font-weight: 400;
-      line-height: 1.2;
-      text-shadow: 0 1px 8px rgba(0,0,0,0.12);
-    }
-    .hero-cta {
-      display: flex;
-      gap: 1rem;
-      margin-bottom: 2.5rem;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .btn-primary {
-      font-family: var(--font-heading);
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: var(--color-putih);
-      background: linear-gradient(90deg, var(--color-emas), var(--color-hijau));
-      border: none;
-      border-radius: var(--radius);
-      padding: 1rem 2rem;
-      cursor: pointer;
-      box-shadow: 0 4px 24px rgba(0,150,136,0.15);
-      transition: background var(--transition), transform var(--transition);
-      outline: none;
-      position: relative;
-    }
-    .btn-primary:hover, .btn-primary:focus {
-      background: linear-gradient(90deg, var(--color-emas), var(--color-teal));
-      transform: scale(1.04) translateY(-2px);
-    }
-    .btn-sticky {
-      position: fixed;
-      bottom: 16px;
-      right: 16px;
-      z-index: 1001;
-      font-size: 1.1rem;
-      padding: 0.75rem 1.5rem;
-      box-shadow: 0 2px 12px rgba(0,77,77,0.18);
-      display: none;
-      animation: stickyFadeIn 0.7s ease;
-    }
-    @keyframes stickyFadeIn {
-      from { opacity: 0; transform: translateY(20px);}
-      to { opacity: 1; transform: translateY(0);}
-    }
-    .trust-badges {
-      display: flex;
-      gap: 1.5rem;
-      justify-content: center;
-      margin-bottom: 0.8rem;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-    .badge {
-      background: var(--glass-bg);
-      border-radius: 1.2rem;
-      padding: 0.5rem 1.2rem;
-      color: var(--color-teal);
-      font-weight: 600;
-      font-size: 1rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      box-shadow: 0 1px 8px rgba(0,150,136,0.08);
-    }
-    [data-theme="dark"] .badge {
-      background: var(--glass-dark-bg);
-      color: var(--color-emas);
-    }
-    /* PRODUCT SHOWCASE */
-    .product-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-      gap: 1.5rem;
-      margin-bottom: 2rem;
-    }
-    .gallery-img {
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: 0 2px 14px rgba(0,77,77,0.08);
-      transition: transform var(--transition), box-shadow var(--transition);
-      position: relative;
-      cursor: pointer;
-      background: var(--color-krem);
-      aspect-ratio: 1/1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .gallery-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform var(--transition);
-    }
-    .gallery-img:hover img, .gallery-img:focus img {
-      transform: scale(1.08);
-    }
-    /* Lightbox */
-    .lightbox {
-      position: fixed;
-      inset: 0;
-      z-index: 9999;
-      background: rgba(0,0,0,0.85);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: opacity 0.3s;
-      animation: fadeIn 0.45s;
-    }
-    @keyframes fadeIn {
-      from {opacity:0;}
-      to {opacity:1;}
-    }
-    .lightbox-content {
-      max-width: 96vw;
-      max-height: 90vh;
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: 0 8px 48px rgba(0,0,0,0.32);
-      background: var(--color-putih);
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    [data-theme="dark"] .lightbox-content {
-      background: var(--color-dark);
-    }
-    .lightbox-img {
-      max-width: 100%;
-      max-height: 75vh;
-      object-fit: contain;
-      border-radius: var(--radius);
-    }
-    .lightbox-close {
-      position: absolute;
-      top: 16px;
-      right: 24px;
-      font-size: 2.2rem;
-      color: var(--color-hijau);
-      background: transparent;
-      border: none;
-      cursor: pointer;
-      font-weight: 900;
-      z-index: 2;
-      transition: color 0.2s;
-    }
-    .lightbox-close:hover {
-      color: var(--color-emas);
-    }
-    /* 360 View/Video */
-    .product-video {
-      width: 100%;
-      max-width: 460px;
-      margin: 0 auto 1rem auto;
-      display: block;
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: 0 2px 14px rgba(0,77,77,0.08);
-    }
-    /* FEATURES & BENEFITS */
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-      gap: 2rem;
-      margin-bottom: 2rem;
-    }
-    .feature-item {
-      background: var(--glass-bg);
-      border-radius: var(--radius);
-      padding: 2rem 1.3rem;
-      text-align: center;
-      box-shadow: 0 2px 14px rgba(0,77,77,0.08);
-      transition: box-shadow var(--transition), transform var(--transition);
-      cursor: pointer;
-    }
-    .feature-item:hover {
-      box-shadow: 0 8px 32px rgba(0,77,77,0.2);
-      transform: translateY(-4px) scale(1.03);
-    }
-    .feature-icon {
-      font-size: 2.2rem;
-      color: var(--color-emas);
-      margin-bottom: 0.7rem;
-    }
-    .feature-title {
-      font-family: var(--font-heading);
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: var(--color-teal);
-    }
-    .feature-desc {
-      font-size: 1rem;
-      color: var(--color-hijau);
-      margin-top: 0.5rem;
-    }
-    [data-theme="dark"] .feature-item {
-      background: var(--glass-dark-bg);
-    }
-    /* Animated Counters */
-    .counters {
-      display: flex;
-      gap: 2rem;
-      justify-content: center;
-      margin-bottom: 2rem;
-      flex-wrap: wrap;
-    }
-    .counter-box {
-      background: var(--glass-bg);
-      border-radius: var(--radius);
-      padding: 1.1rem 2rem;
-      min-width: 150px;
-      text-align: center;
-      box-shadow: 0 1px 8px rgba(0,150,136,0.08);
-    }
-    .counter-number {
-      font-family: var(--font-heading);
-      font-size: 2rem;
-      color: var(--color-emas);
-      font-weight: 900;
-      margin-bottom: 0.2rem;
-    }
-    .counter-label {
-      font-size: 1rem;
-      color: var(--color-teal);
-      font-weight: 600;
-    }
-    /* Before/After */
-    .before-after {
-      display: flex;
-      gap: 2rem;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 2rem;
-      flex-wrap: wrap;
-    }
-    .before-img, .after-img {
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: 0 2px 14px rgba(0,77,77,0.08);
-      width: 220px;
-      aspect-ratio: 1/1;
-    }
-    .before-label, .after-label {
-      font-family: var(--font-heading);
-      color: var(--color-emas);
-      font-size: 1rem;
-      text-align: center;
-      margin-top: 0.3rem;
-      font-weight: 700;
-    }
-    /* UNIQUE SELLING */
-    .usp-list {
-      display: flex;
-      gap: 1.2rem;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-bottom: 2rem;
-    }
-    .usp-item {
-      background: var(--glass-bg);
-      padding: 1rem 1.2rem;
-      border-radius: 1rem;
-      font-weight: 600;
-      color: var(--color-hijau);
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      box-shadow: 0 1px 8px rgba(0,150,136,0.08);
-    }
-    [data-theme="dark"] .usp-item {
-      background: var(--glass-dark-bg);
-      color: var(--color-emas);
-    }
-    /* SOCIAL PROOF */
-    .testimonial-carousel {
-      display: flex;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      gap: 1.5rem;
-      padding-bottom: 1rem;
-      margin-bottom: 2rem;
-    }
-    .testimonial-item {
-      scroll-snap-align: start;
-      background: var(--glass-bg);
-      border-radius: var(--radius);
-      min-width: 320px;
-      max-width: 350px;
-      flex: 1 0 auto;
-      padding: 2rem 1.3rem;
-      box-shadow: 0 2px 14px rgba(0,77,77,0.08);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .testimonial-photo {
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 1rem;
-      border: 2px solid var(--color-emas);
-    }
-    .testimonial-name {
-      font-family: var(--font-heading);
-      font-weight: 700;
-      color: var(--color-teal);
-      margin-bottom: 0.5rem;
-      font-size: 1rem;
-    }
-    .testimonial-text {
-      font-size: 1.02rem;
-      color: var(--color-hijau);
-      margin-bottom: 0.6rem;
-    }
-    [data-theme="dark"] .testimonial-item {
-      background: var(--glass-dark-bg);
-    }
-    .star-rating {
-      color: var(--color-emas);
-      font-size: 1.2rem;
-      margin-bottom: 0.3rem;
-    }
-    /* Media mentions */
-    .media-logos {
-      display: flex;
-      gap: 1.2rem;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 1.5rem;
-      flex-wrap: wrap;
-    }
-    .media-logo {
-      height: 32px;
-      max-width: 120px;
-      filter: grayscale(1) brightness(1.3);
-      opacity: .85;
-    }
-    /* User gallery */
-    .ugc-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
-      gap: 0.8rem;
-      margin-bottom: 2rem;
-    }
-    .ugc-img {
-      border-radius: 1rem;
-      overflow: hidden;
-      width: 100%;
-      aspect-ratio: 1/1;
-      object-fit: cover;
-      box-shadow: 0 1px 8px rgba(0,150,136,0.08);
-    }
-    /* Live purchase counter */
-    .live-counter {
-      display: flex;
-      gap: 1.2rem;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 2rem;
-      font-size: 1.1rem;
-      color: var(--color-hijau);
-      font-weight: 700;
-    }
-    .live-dot {
-      width: 12px;
-      height: 12px;
-      background: var(--color-emas);
-      border-radius: 50%;
-      margin-right: 6px;
-      animation: livePulse 1s infinite alternate;
-    }
-    @keyframes livePulse {
-      from { opacity: 0.4;}
-      to { opacity: 1;}
-    }
-    /* PRICING & PROMO */
-    .pricing {
-      background: var(--glass-bg);
-      border-radius: var(--radius);
-      box-shadow: 0 4px 24px rgba(0,150,136,0.10);
-      padding: 2.5rem 2rem;
-      margin-bottom: 2rem;
-      text-align: center;
-      position: relative;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .price-original {
-      font-size: 1.3rem;
+
+    .price-strike {
       text-decoration: line-through;
-      color: #888;
-      margin-right: 0.6rem;
-      font-weight: 500;
+      color: #aaa;
     }
-    .price-discount {
-      font-size: 2.2rem;
-      color: var(--color-emas);
-      font-weight: 900;
-      font-family: var(--font-heading);
-      background: linear-gradient(90deg,var(--color-emas),var(--color-hijau));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      margin-right: 0.7rem;
+
+    .color-option:hover {
+      transform: scale(1.05);
+      transition: all 0.3s ease;
     }
-    .promo-badge {
-      background: var(--color-hijau);
-      color: var(--color-putih);
-      padding: 0.3rem 0.9rem;
-      border-radius: 1rem;
-      font-weight: 700;
-      margin-left: 0.7rem;
-      font-size: 1rem;
-      animation: promoPulse 1.2s infinite alternate;
+
+    .cta-button {
+      background-color: var(--islamic-green);
+      transition: background-color 0.3s ease;
     }
-    @keyframes promoPulse {
-      from { background: var(--color-hijau);}
-      to { background: var(--color-emas);}
+
+    .cta-button:hover {
+      background-color: #00796B;
     }
-    .countdown {
-      margin: 1rem 0;
-      font-size: 1.3rem;
-      color: var(--color-teal);
-      font-weight: 700;
-      letter-spacing: 2px;
-    }
-    .payment-logos {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      margin-top: 1.5rem;
-      flex-wrap: wrap;
-    }
-    .pay-logo {
-      height: 28px;
-      filter: grayscale(1) brightness(1.5);
-      opacity: .82;
-    }
-    /* ORDER FORM PREMIUM */
-    .order-form-section {
-      background: linear-gradient(135deg, var(--color-hijau) 0%, var(--color-emas) 100%);
-      border-radius: var(--radius);
-      box-shadow: 0 4px 24px rgba(0,77,77,0.10);
-      padding: 2.7rem 2rem;
-      max-width: 600px;
-      margin: 0 auto 2.5rem auto;
+
+    .video-container {
       position: relative;
-    }
-    .order-form-title {
-      font-family: var(--font-heading);
-      font-weight: 900;
-      font-size: 2rem;
-      color: var(--color-putih);
-      margin-bottom: 1.2rem;
-      letter-spacing: -2px;
-    }
-    /* Custom OrderOnline Form Styling */
-    .orderonline-embed-form {
-      background: var(--glass-bg);
-      border-radius: var(--radius);
-      box-shadow: 0 2px 14px rgba(0,77,77,0.12);
-      padding: 1.8rem 1.2rem;
-      font-family: var(--font-body);
-      color: var(--color-dark);
-    }
-    [data-theme="dark"] .orderonline-embed-form {
-      background: var(--glass-dark-bg);
-      color: var(--color-putih);
-    }
-    .orderonline-embed-form input,
-    .orderonline-embed-form select,
-    .orderonline-embed-form textarea {
-      font-family: var(--font-body);
-      border-radius: 1rem;
-      border: 1.5px solid var(--color-hijau);
-      padding: 0.9rem 1rem;
-      margin-bottom: 0.9rem;
-      font-size: 1rem;
-      background: var(--color-putih);
-      transition: border var(--transition), box-shadow var(--transition);
-      outline: none;
-      width: 100%;
-      box-sizing: border-box;
-    }
-    [data-theme="dark"] .orderonline-embed-form input,
-    [data-theme="dark"] .orderonline-embed-form select,
-    [data-theme="dark"] .orderonline-embed-form textarea {
-      background: var(--color-dark);
-      color: var(--color-putih);
-      border-color: var(--color-emas);
-    }
-    .orderonline-embed-form input:focus,
-    .orderonline-embed-form select:focus,
-    .orderonline-embed-form textarea:focus {
-      border-color: var(--color-emas);
-      box-shadow: 0 0 0 2px var(--color-emas);
-    }
-    .orderonline-embed-form button,
-    .orderonline-embed-form [type="submit"] {
-      font-family: var(--font-heading);
-      font-weight: 700;
-      font-size: 1.1rem;
-      background: linear-gradient(90deg,var(--color-emas),var(--color-hijau));
-      color: var(--color-putih);
-      border: none;
-      border-radius: 1.2rem;
-      padding: 0.9rem 2rem;
       cursor: pointer;
-      box-shadow: 0 2px 12px rgba(0,150,136,0.10);
-      transition: background var(--transition), transform var(--transition);
-      outline: none;
-      margin-top: 0.5rem;
     }
-    .orderonline-embed-form button:hover,
-    .orderonline-embed-form [type="submit"]:hover {
-      background: linear-gradient(90deg,var(--color-hijau),var(--color-emas));
-      transform: scale(1.04);
-    }
-    /* Progress Indicator */
-    .form-progress {
+
+    .video-play-btn {
       position: absolute;
-      top: 2rem;
-      right: 2rem;
-      background: var(--color-emas);
-      color: var(--color-putih);
-      border-radius: 1.2rem;
-      padding: 0.3rem 0.8rem;
-      font-size: 1rem;
-      font-weight: 700;
-      z-index: 2;
-    }
-    /* FOOTER */
-    footer {
-      background: var(--glass-bg);
-      border-radius: var(--radius) var(--radius) 0 0;
-      padding: 2rem 0;
-      color: var(--color-teal);
-      font-family: var(--font-body);
-      box-shadow: 0 -2px 12px rgba(0,150,136,0.06);
-      margin-top: 4rem;
-    }
-    [data-theme="dark"] footer {
-      background: var(--glass-dark-bg);
-      color: var(--color-putih);
-    }
-    .footer-content {
-      display: flex;
-      gap: 2rem;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: flex-start;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 2vw;
-    }
-    .footer-section {
-      min-width: 180px;
-      margin-bottom: 1.2rem;
-    }
-    .footer-title {
-      font-family: var(--font-heading);
-      font-weight: 700;
-      font-size: 1.1rem;
-      margin-bottom: 0.7rem;
-      color: var(--color-hijau);
-    }
-    .footer-links, .footer-social {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .footer-links li, .footer-social li {
-      margin-bottom: 0.6rem;
-    }
-    .footer-links a, .footer-social a {
-      color: var(--color-teal);
-      text-decoration: none;
-      transition: color 0.18s;
-      font-weight: 500;
-    }
-    [data-theme="dark"] .footer-links a, [data-theme="dark"] .footer-social a {
-      color: var(--color-emas);
-    }
-    .footer-links a:hover, .footer-social a:hover {
-      color: var(--color-emas);
-      text-decoration: underline;
-    }
-    .newsletter-form {
-      display: flex;
-      gap: 0.7rem;
-      flex-wrap: wrap;
-      margin-top: 0.5rem;
-    }
-    .newsletter-form input[type="email"] {
-      border-radius: 1.2rem;
-      border: 1.5px solid var(--color-hijau);
-      padding: 0.7rem 1rem;
-      font-size: 1rem;
-      background: var(--color-krem);
-      outline: none;
-      min-width: 180px;
-    }
-    .newsletter-form button {
-      border-radius: 1.2rem;
-      background: var(--color-emas);
-      color: var(--color-teal);
-      border: none;
-      padding: 0.7rem 1.5rem;
-      font-family: var(--font-heading);
-      font-weight: 700;
-      cursor: pointer;
-      transition: background var(--transition), color var(--transition);
-    }
-    .newsletter-form button:hover {
-      background: var(--color-hijau);
-      color: var(--color-putih);
-    }
-    .footer-copyright {
-      text-align: center;
-      margin-top: 2rem;
-      color: #888;
-      font-size: .95rem;
-    }
-    /* Dark Mode Toggle */
-    .dark-mode-toggle {
-      position: fixed;
-      top: 24px;
-      right: 24px;
-      z-index: 1003;
-      background: var(--color-emas);
-      color: var(--color-teal);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 16px 24px;
       border-radius: 50%;
-      width: 48px;
-      height: 48px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.7rem;
-      cursor: pointer;
-      box-shadow: 0 2px 8px rgba(0,150,136,0.12);
-      transition: background 0.2s, color 0.2s;
-      border: none;
-      outline: none;
+      font-size: 2rem;
     }
-    .dark-mode-toggle:hover {
-      background: var(--color-hijau);
-      color: var(--color-putih);
-      transform: scale(1.07);
-    }
-    /* Hijab Colors */
-    .color-swatches {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      margin-bottom: 2rem;
-      justify-content: center;
-      align-items: center;
-    }
-    .swatch {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.3rem;
-      text-align: center;
-    }
-    .swatch-img {
-      border-radius: 1rem;
-      overflow: hidden;
-      width: 40px;
-      height: 40px;
-      box-shadow: 0 1px 8px rgba(0,150,136,0.10);
-      border: 2px solid var(--color-emas);
-      transition: border var(--transition), transform var(--transition);
-      cursor: pointer;
-    }
-    .swatch-img.selected {
-      border-color: var(--color-hijau);
-      transform: scale(1.13);
-    }
-    .swatch-label {
-      font-size: 0.92rem;
-      color: var(--color-teal);
-      font-weight: 600;
-    }
-    /* Detail Ukuran */
-    .size-detail-section {
-      background: var(--glass-bg);
-      border-radius: var(--radius);
-      padding: 2rem 1rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 2px 14px rgba(0,77,77,0.10);
-      max-width: 650px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-    }
-    .size-detail-title {
-      font-family: var(--font-heading);
-      font-weight: 700;
-      font-size: 1.5rem;
-      color: var(--color-hijau);
-      margin-bottom: 1.2rem;
-    }
-    .size-detail-img {
-      border-radius: 1rem;
-      max-width: 330px;
-      width: 100%;
-      box-shadow: 0 2px 12px rgba(0,150,136,0.11);
-      margin-bottom: 1rem;
-    }
-    .size-table {
-      max-width: 380px;
-      margin: 0 auto;
-      border-radius: 1rem;
-      overflow: hidden;
-      background: var(--color-putih);
-      box-shadow: 0 1px 8px rgba(0,150,136,0.08);
-      font-size: 1rem;
-      margin-bottom: 1rem;
-    }
-    .size-table th, .size-table td {
-      padding: 0.7rem 1rem;
-      border-bottom: 1px solid var(--color-krem);
-    }
-    .size-table th {
-      background: var(--color-emas);
-      color: var(--color-teal);
-      font-weight: 700;
-      font-family: var(--font-heading);
-    }
-    .size-table td {
-      background: var(--color-krem);
-      color: var(--color-teal);
-    }
-    /* Responsive */
-    @media (max-width:900px){
-      .container, .footer-content { max-width: 98vw; }
-      .feature-grid, .product-gallery, .ugc-gallery { grid-template-columns: 1fr 1fr; }
-      .testimonial-carousel { min-width: 100vw; }
-    }
-    @media (max-width:600px){
-      .hero-content { padding: 2rem 0.6rem; }
-      .feature-grid, .product-gallery, .ugc-gallery { grid-template-columns: 1fr; }
-      .footer-content { flex-direction: column; gap: 1rem;}
-      .footer-section { min-width: 100%; }
-      .order-form-section, .size-detail-section, .pricing { padding: 1.2rem 0.5rem; }
-      .product-video { max-width: 95vw;}
-      .testimonial-item { min-width: 220px;}
-      .before-img, .after-img { width: 120px;}
-    }
-    /* Loader */
-    .loader {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 200px;
-      width: 100%;
-      font-size: 1.3rem;
-      color: var(--color-hijau);
-      font-family: var(--font-heading);
-    }
-    /* GDPR Banner */
-    .gdpr-banner {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100vw;
-      background: var(--glass-bg);
-      color: var(--color-teal);
-      padding: 1.2rem 2vw;
-      z-index: 99999;
-      box-shadow: 0 -2px 16px rgba(0,150,136,0.14);
-      font-size: 1rem;
-      transition: transform 0.3s;
-      transform: translateY(0);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .gdpr-banner.hide {
-      transform: translateY(100%);
-    }
-    .gdpr-btn {
-      background: var(--color-hijau);
-      color: var(--color-putih);
-      border: none;
-      border-radius: 1rem;
-      padding: 0.6rem 1.2rem;
-      font-family: var(--font-heading);
-      font-weight: 600;
-      margin-left: 1.5rem;
-      cursor: pointer;
-      transition: background var(--transition), color var(--transition);
-    }
-    .gdpr-btn:hover {
-      background: var(--color-emas);
-      color: var(--color-teal);
-    }
-    /* Social Share Buttons */
-    .social-share {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      margin-bottom: 1.2rem;
-    }
-    .social-share-btn {
-      background: var(--color-emas);
-      color: var(--color-teal);
-      border-radius: 50%;
-      width: 42px;
-      height: 42px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.2rem;
-      cursor: pointer;
-      transition: background var(--transition), color var(--transition), transform var(--transition);
-      border: none;
-      outline: none;
-    }
-    .social-share-btn:hover {
-      background: var(--color-hijau);
-      color: var(--color-putih);
-      transform: scale(1.13);
-    }
-    /* Print-friendly */
-    @media print {
-      body {
-        background: #fff !important;
-        color: #222 !important;
-      }
-      .glass, .order-form-section, .hero-overlay, .dark-mode-toggle, .gdpr-banner, .btn-sticky, .sticky-cta, .social-share, .lightbox { display: none !important; }
-      .container, .footer-content { max-width: 100vw !important; }
-      section { margin-bottom: 1rem !important;}
-      .pricing, .size-detail-section { background: #fff !important; box-shadow: none !important;}
-      footer { background: #fff !important; color: #222 !important;}
+
+    .faq-item.active .faq-content {
+      display: block;
     }
   </style>
 </head>
-<body>
-  <!-- Dark Mode Toggle -->
-  <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode">
-    🌙
-  </button>
-  <!-- GDPR Banner -->
-  <div class="gdpr-banner" id="gdprBanner">
-    Situs ini menggunakan cookie untuk pengalaman terbaik, analitik, dan keamanan. <button class="gdpr-btn" id="gdprAccept">OK, Saya Setuju</button>
-  </div>
+<body class="scroll-smooth">
 
-  <!-- Sticky CTA Button -->
-  <button class="btn-primary btn-sticky sticky-cta" id="stickyCTA" style="display:none;" onclick="document.getElementById('order-section').scrollIntoView({behavior:'smooth'})">
-    Order Sekarang 🔥
-  </button>
-
-  <!-- HERO SECTION -->
-  <section class="hero" id="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content" data-aos="fade-up">
-      <h1 class="hero-headline">Meggie Bergo Inner</h1>
-      <div class="hero-subheadline">Hijab Kaos Rayon Premium dengan Inner Tali. <br>Simple, Elegan, Sat Set!</div>
-      <div class="hero-cta">
-        <button class="btn-primary" onclick="document.getElementById('order-section').scrollIntoView({behavior:'smooth'})">Order Sekarang</button>
-        <button class="btn-primary" onclick="document.getElementById('product-section').scrollIntoView({behavior:'smooth'})">Lihat Produk</button>
-      </div>
-      <div class="trust-badges">
-        <span class="badge"><img src="https://img.icons8.com/fluency/28/guarantee.png" alt="" width="22">Garansi 100%</span>
-        <span class="badge"><img src="https://img.icons8.com/fluency/28/delivery.png" alt="" width="22">Free Ongkir</span>
-        <span class="badge"><img src="https://img.icons8.com/fluency/28/verified-account.png" alt="" width="22">Official Store</span>
+  <!-- Hero Section -->
+  <section class="hero-bg min-h-screen flex items-center justify-center text-white hero-overlay">
+    <div class="text-center px-6 max-w-3xl mx-auto" data-aos="fade-up">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Meggie Bergo Inner – Hijab Premium Instant yang Nyaman</h1>
+      <p class="text-lg md:text-xl mb-6">Tampil elegan dalam hitungan detik dengan bahan kaos rayon premium dan inner tali terintegrasi.</p>
+      <a href="#order" class="cta-button inline-block px-8 py-4 rounded-full text-lg font-semibold shadow-md hover:scale-105 transition-transform">Pesan Sekarang – Rp 155.000</a>
+      <div class="mt-6 flex flex-wrap justify-center gap-4 text-sm">
+        <span class="flex items-center"><i data-feather="check-circle" class="mr-2"></i> Garansi 30 Hari</span>
+        <span class="flex items-center"><i data-feather="truck" class="mr-2"></i> Gratis Ongkir</span>
+        <span class="flex items-center"><i data-feather="star" class="mr-2"></i> Bahan Premium</span>
       </div>
     </div>
   </section>
 
-  <main class="container">
-    <!-- PRODUCT SHOWCASE -->
-    <section id="product-section" data-aos="fade-up">
-      <h2 class="section-title">Galeri Meggie Bergo Inner</h2>
-      <div class="product-gallery" id="productGallery">
-        <div class="gallery-img" tabindex="0"><img src="https://cdn.orderonline.id/uploads/images_8837391757066736124.png" alt="Meggie Bergo Inner Gallery 1" loading="lazy"></div>
-        <div class="gallery-img" tabindex="0"><img src="https://cdn.orderonline.id/uploads/images_3689471757066734656.png" alt="Meggie Bergo Inner Gallery 2" loading="lazy"></div>
-        <div class="gallery-img" tabindex="0"><img src="https://cdn.orderonline.id/uploads/images_3194981757066735785.png" alt="Meggie Bergo Inner Gallery 3" loading="lazy"></div>
-        <div class="gallery-img" tabindex="0"><img src="https://cdn.orderonline.id/uploads/images_9589331757066736168.png" alt="Meggie Bergo Inner Gallery 4" loading="lazy"></div>
-        <div class="gallery-img" tabindex="0"><img src="https://cdn.orderonline.id/uploads/images_3139731757066736115.png" alt="Meggie Bergo Inner Gallery 5" loading="lazy"></div>
-        <div class="gallery-img" tabindex="0"><img src="https://cdn.orderonline.id/uploads/images_9323521757066735193.png" alt="Meggie Bergo Inner Gallery 6" loading="lazy"></div>
-        <div class="gallery-img" tabindex="0"><img src="https://cdn.orderonline.id/uploads/images_8538751757066735986.png" alt="Meggie Bergo Inner Gallery 7" loading="lazy"></div>
+  <!-- Product Showcase -->
+  <section class="py-16 px-6 bg-white" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Desain Elegan dan Nyaman</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-10">
+        <a href="https://cdn.orderonline.id/uploads/images_8837391757066736124.png" data-lightbox="gallery">
+          <img src="https://cdn.orderonline.id/uploads/images_8837391757066736124.png" alt="Meggie Bergo Inner" class="rounded-lg shadow-md w-full object-cover" loading="lazy">
+        </a>
+        <a href="https://cdn.orderonline.id/uploads/images_3689471757066734656.png" data-lightbox="gallery">
+          <img src="https://cdn.orderonline.id/uploads/images_3689471757066734656.png" alt="Meggie Bergo Inner" class="rounded-lg shadow-md w-full object-cover" loading="lazy">
+        </a>
+        <a href="https://cdn.orderonline.id/uploads/images_3194981757066735785.png" data-lightbox="gallery">
+          <img src="https://cdn.orderonline.id/uploads/images_3194981757066735785.png" alt="Meggie Bergo Inner" class="rounded-lg shadow-md w-full object-cover" loading="lazy">
+        </a>
+        <a href="https://cdn.orderonline.id/uploads/images_9589331757066736168.png" data-lightbox="gallery">
+          <img src="https://cdn.orderonline.id/uploads/images_9589331757066736168.png" alt="Meggie Bergo Inner" class="rounded-lg shadow-md w-full object-cover" loading="lazy">
+        </a>
+        <a href="https://cdn.orderonline.id/uploads/images_3139731757066736115.png" data-lightbox="gallery">
+          <img src="https://cdn.orderonline.id/uploads/images_3139731757066736115.png" alt="Meggie Bergo Inner" class="rounded-lg shadow-md w-full object-cover" loading="lazy">
+        </a>
+        <a href="https://cdn.orderonline.id/uploads/images_9323521757066735193.png" data-lightbox="gallery">
+          <img src="https://cdn.orderonline.id/uploads/images_9323521757066735193.png" alt="Meggie Bergo Inner" class="rounded-lg shadow-md w-full object-cover" loading="lazy">
+        </a>
       </div>
-      <video class="product-video" controls poster="https://cdn.orderonline.id/uploads/images_8837391757066736124.png">
-        <source src="https://down-tx-sg.vod.susercontent.com/api/v4/11110105/mms/id-11110105-6knah-maxx1nhfjnz23a.16005581751285165.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <div style="text-align:center;margin:1.5rem 0;">
-        <span style="font-size:1.1rem;color:var(--color-teal);font-weight:600;">Deskripsi:</span>
-        <p style="max-width:500px;margin:0.6rem auto;font-size:1.08rem;color:var(--color-hijau);">
-          Meggie Bergo Instant Inner merupakan hijab bergo bahan kaos rayon premium yang menyatu dengan inner tali di dalamnya sehingga membuat penampilan terlihat simple dan sat set sat set.
-        </p>
-      </div>
-      <div class="color-swatches" id="colorSwatches">
-        <div class="swatch">
-          <img src="https://remove.photos/cache/images/users/31792733-8a52-4c13-8f0c-a492c58d1e70/recommend-optimized.png" class="swatch-img" title="Hitam" alt="Hitam">
-          <span class="swatch-label">Hitam</span>
-        </div>
-        <div class="swatch">
-          <img src="https://remove.photos/cache/images/users/2a78ccae-b902-400b-bea8-d6aa92b7c686/recommend-optimized.png" class="swatch-img" title="Dark Grey" alt="Dark Grey">
-          <span class="swatch-label">Dark Grey</span>
-        </div>
-        <div class="swatch">
-          <img src="https://remove.photos/cache/images/users/0bf8c9c0-df31-4907-af8b-228ced98d357/recommend-optimized.png" class="swatch-img" title="Coksu" alt="Coksu">
-          <span class="swatch-label">Coksu</span>
-        </div>
-        <div class="swatch">
-          <img src="https://remove.photos/cache/images/users/8b6677eb-a116-4529-846d-9b607f26ab68/recommend-optimized.png" class="swatch-img" title="Khaki" alt="Khaki">
-          <span class="swatch-label">Khaki</span>
-        </div>
-        <div class="swatch">
-          <img src="https://remove.photos/cache/images/users/53f6e7c8-365f-41e7-bdba-50815fdb7f91/recommend-optimized.png" class="swatch-img" title="Mocacino" alt="Mocacino">
-          <span class="swatch-label">Mocacino</span>
-        </div>
-        <div class="swatch">
-          <img src="https://remove.photos/cache/images/users/8477d46a-42e1-4292-8a93-00d0b99d9b4c/recommend-optimized.png" class="swatch-img" title="Denim" alt="Denim">
-          <span class="swatch-label">Denim</span>
-        </div>
-        <div class="swatch">
-          <img src="https://remove.photos/cache/images/users/4bb38c41-9776-41e9-aaca-ab55cf2dcfdb/recommend-optimized.png" class="swatch-img" title="Frapucino" alt="Frapucino">
-          <span class="swatch-label">Frapucino</span>
-        </div>
-        <div class="swatch">
-          <img src="https://remove.photos/cache/images/users/65dd8497-d74c-46e2-a008-382f05b9d0a8/recommend-optimized.png" class="swatch-img" title="Navy" alt="Navy">
-          <span class="swatch-label">Navy</span>
-        </div>
-      </div>
-    </section>
 
-    <!-- DETAIL UKURAN -->
-    <section class="size-detail-section" id="size-section" data-aos="fade-up">
-      <div class="size-detail-title">Detail Ukuran</div>
-      <img src="https://cdn.orderonline.id/uploads/images_8374461757066736118.png" alt="Size Detail 1" class="size-detail-img" loading="lazy">
-      <img src="https://cdn.orderonline.id/uploads/images_1391541757067204789.png" alt="Size Detail 2" class="size-detail-img" loading="lazy">
-      <table class="size-table">
-        <thead>
-          <tr>
-            <th>Panjang Depan</th>
-            <th>Panjang Belakang</th>
-            <th>Lingkar Wajah</th>
-            <th>Lingkar Inner</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>27 cm</td>
-            <td>52 cm</td>
-            <td>58 cm</td>
-            <td>56 cm</td>
-          </tr>
-        </tbody>
-      </table>
-      <small style="color:var(--color-hijau);display:block;">*Toleransi +/- 1-2cm (karena bahan stretch)</small>
-    </section>
-
-    <!-- BENEFITS & FEATURES -->
-    <section data-aos="fade-up">
-      <h2 class="section-title">Keunggulan & Fitur</h2>
-      <div class="feature-grid">
-        <div class="feature-item" data-aos="zoom-in">
-          <div class="feature-icon">🧕</div>
-          <div class="feature-title">Bahan Kaos Rayon Premium</div>
-          <div class="feature-desc">Lembut, adem, dan stretch. Nyaman dipakai seharian.</div>
+      <!-- Video -->
+      <div class="relative video-container rounded-xl overflow-hidden shadow-lg" onclick="playVideo()">
+        <img src="https://cdn.orderonline.id/uploads/images_8837391757066736124.png" alt="Video Preview" class="w-full">
+        <div class="video-play-btn">
+          <i data-feather="play"></i>
         </div>
-        <div class="feature-item" data-aos="zoom-in">
-          <div class="feature-icon">🎀</div
+        <video id="product-video" class="absolute inset-0 w-full h-full hidden" preload="none" controls>
+          <source src="https://down-tx-sg.vod.susercontent.com/api/v4/11110105/mms/id-11110105-6knah-maxx1nhfjnz23a.16005581751285165.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Color Variants -->
+  <section class="py-16 px-6 bg-[#f0f0e6]" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Pilihan Warna Eksklusif</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+        <div class="text-center">
+          <img src="https://remove.photos/cache/images/users/31792733-8a52-4c13-8f0c-a492c58d1e70/recommend-optimized.png" alt="Hitam" class="w-full rounded-lg shadow-md color-option">
+          <p class="mt-2 font-medium">Hitam</p>
+        </div>
+        <div class="text-center">
+          <img src="https://remove.photos/cache/images/users/2a78ccae-b902-400b-bea8-d6aa92b7c686/recommend-optimized.png" alt="Dark Grey" class="w-full rounded-lg shadow-md color-option">
+          <p class="mt-2 font-medium">Dark Grey</p>
+        </div>
+        <div class="text-center">
+          <img src="https://remove.photos/cache/images/users/0bf8c9c0-df31-4907-af8b-228ced98d357/recommend-optimized.png" alt="Coksu" class="w-full rounded-lg shadow-md color-option">
+          <p class="mt-2 font-medium">Coksu</p>
+        </div>
+        <div class="text-center">
+          <img src="https://remove.photos/cache/images/users/8b6677eb-a116-4529-846d-9b607f26ab68/recommend-optimized.png" alt="Khaki" class="w-full rounded-lg shadow-md color-option">
+          <p class="mt-2 font-medium">Khaki</p>
+        </div>
+        <div class="text-center">
+          <img src="https://remove.photos/cache/images/users/53f6e7c8-365f-41e7-bdba-50815fdb7f91/recommend-optimized.png" alt="Mocacino" class="w-full rounded-lg shadow-md color-option">
+          <p class="mt-2 font-medium">Mocacino</p>
+        </div>
+        <div class="text-center">
+          <img src="https://remove.photos/cache/images/users/8477d46a-42e1-4292-8a93-00d0b99d9b4c/recommend-optimized.png" alt="Denim" class="w-full rounded-lg shadow-md color-option">
+          <p class="mt-2 font-medium">Denim</p>
+        </div>
+        <div class="text-center">
+          <img src="https://remove.photos/cache/images/users/4bb38c41-9776-41e9-aaca-ab55cf2dcfdb/recommend-optimized.png" alt="Frapucino" class="w-full rounded-lg shadow-md color-option">
+          <p class="mt-2 font-medium">Frapucino</p>
+        </div>
+        <div class="text-center">
+          <img src="https://remove.photos/cache/images/users/65dd8497-d74c-46e2-a008-382f05b9d0a8/recommend-optimized.png" alt="Navy" class="w-full rounded-lg shadow-md color-option">
+          <p class="mt-2 font-medium">Navy</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Size Details -->
+  <section class="py-16 px-6 bg-white" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-10">Detail Ukuran yang Pas</h2>
+      <div class="space-y-6">
+        <img src="https://cdn.orderonline.id/uploads/images_8374461757066736118.png" alt="Ukuran Depan" class="mx-auto rounded-lg shadow-md w-full max-w-md" loading="lazy">
+        <img src="https://cdn.orderonline.id/uploads/images_1391541757067204789.png" alt="Ukuran Belakang" class="mx-auto rounded-lg shadow-md w-full max-w-md" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="py-16 px-6 bg-[#f0f0e6]" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Mengapa Memilih Meggie Bergo Inner?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow-md text-center">
+          <i data-feather="heart" class="text-3xl text-[#009688] mb-4"></i>
+          <h3 class="font-bold text-xl mb-2">Nyaman Seharian</h3>
+          <p>Bahan kaos rayon yang lembut dan tidak panas.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md text-center">
+          <i data-feather="droplet" class="text-3xl text-[#009688] mb-4"></i>
+          <h3 class="font-bold text-xl mb-2">Tidak Mudah Luntur</h3>
+          <p>Warna tahan lama meski dicuci berkali-kali.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md text-center">
+          <i data-feather="clock" class="text-3xl text-[#009688] mb-4"></i>
+          <h3 class="font-bold text-xl mb-2">Praktis Dipakai</h3>
+          <p>Inner tali terintegrasi membuat pemasangan instan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Proof -->
+  <section class="py-16 px-6 bg-white" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Apa Kata Mereka?</h2>
+      <div class="flex flex-col items-center space-y-6">
+        <div class="bg-[#f0f0e6] p-6 rounded-xl max-w-2xl w-full">
+          <div class="flex items-center mb-4">
+            <img src="http://static.photos/people/100x100/1" alt="User" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <p class="font-bold">Siti Nurhaliza</p>
+              <div class="flex text-yellow-400">
+                <i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i><i data-feather="star"></i>
+              </div>
+            </div>
+          </div>
+          <p>"Benar-benar nyaman dan tidak ribet. Cocok buat aktivitas sehari-hari!"</p>
+        </div>
+        <div class="text-xl font-semibold text-[#009688]">500+ terjual hari ini!</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing & Promo -->
+  <section id="order" class="py-16 px-6 bg-[#f0f0e6]" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Dapatkan Sekarang dengan Harga Spesial</h2>
+      <div class="text-2xl mb-2">
+        <span class="price-strike">Rp 200.000</span>
+        <span class="text-3xl font-bold ml-2 text-[#d4af37]">Rp 155.000</span>
+      </div>
+      <span class="discount-badge mb-6 inline-block">DISKON</span>
+      <p class="mb-6 text-red-600 font-semibold">Diskon berakhir dalam: <span id="countdown">02:15:30</span></p>
+
+      <div class="glass-form max-w-lg mx-auto text-left">
+        <!-- OrderOnline Embed Code - v8.0.4 -->
+<div class="ooef">
+  <form class="orderonline-embed-form" data-username="mila" data-product-slug="meggie-bergo-inner" data-product-id="68bab0deb93a14b62b0144a7" id="oo-embed-form-meggie-bergo-inner-1385" data-origin="orderonline">
+    <div class="ooef-loader">
+      <style>
+        .ooef-loader {
+          visibility: hidden;
+          opacity: 0;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          animation: ooLoadingIn 10s ease;
+          -webkit-animation: ooLoadingIn 10s ease;
+          animation-fill-mode: forwards;
+          overflow: hidden
+        }
+
+        @keyframes ooLoadingIn {
+          0% {
+            visibility: hidden;
+            opacity: 0
+          }
+
+          20% {
+            visibility: visible;
+            opacity: 0
+          }
+
+          100% {
+            visibility: visible;
+            opacity: 1
+          }
+        }
+
+        @-webkit-keyframes ooLoadingIn {
+          0% {
+            visibility: hidden;
+            opacity: 0
+          }
+
+          20% {
+            visibility: visible;
+            opacity: 0
+          }
+
+          100% {
+            visibility: visible;
+            opacity: 1
+          }
+        }
+
+        .ooef-loader>div,
+        .ooef-loader>div:after {
+          border-radius: 50%;
+          width: 2.5rem;
+          height: 2.5rem
+        }
+
+        .ooef-loader>div {
+          font-size: 10px;
+          position: relative;
+          text-indent: -9999em;
+          border: .25rem solid #f5f5f5;
+          border-left: .25rem solid #55c4cf;
+          -webkit-transform: translateZ(0);
+          -ms-transform: translateZ(0);
+          transform: translateZ(0);
+          -webkit-animation: ooLoading 1.1s infinite linear;
+          animation: ooLoading 1.1s infinite linear
+        }
+
+        .ooef-loader.error>div {
+          border-left: .25rem solid #ff4500;
+          animation-duration: 5s
+        }
+
+        @-webkit-keyframes ooLoading {
+          0% {
+            -webkit-transform: rotate(0);
+            transform: rotate(0)
+          }
+
+          100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg)
+          }
+        }
+
+        @keyframes ooLoading {
+          0% {
+            -webkit-transform: rotate(0);
+            transform: rotate(0)
+          }
+
+          100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg)
+          }
+        }
+      </style>
+      <div aria-live="polite" role="status">
+        <div>Loading...</div>
+      </div>
+    </div>
+  </form>
+</div>
+<script>
+  if (typeof xLogError != 'function') {
+    var xLogError = function(error) {
+      var req = new XMLHttpRequest();
+      var payload = JSON.stringify({
+        url: document.location.href,
+        line: error.line,
+        stack: error.stack
+      });
+      var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+      req.open('POST', 'https://api.orderonline.id/log', true);
+      req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+      req.send(params);
+    };
+  }
+  try {
+    if (typeof xEmbedScript != 'function') {
+      var xEmbedScript = function() {
+        ! function(w, d, e, v, id, t, s) {
+          if (d.getElementById(id)) return;
+          t = d.createElement(e);
+          t.async = !0;
+          t.src = v;
+          t.id = id;
+          s = d.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s);
+        }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+      };
+    }
+    if (typeof xEmbedInit != 'function') {
+      var xEmbedInit = function(w, n) {
+        if (w.ooe) return;
+        n = w.ooe = function() {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!w._ooe) w._ooe = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '8.0.4';
+        n.queue = [];
+      };
+    }
+    xEmbedInit(window);
+    ooe('setup', 'redirect', 'https://mila.orderonline.id');
+    ooe('init', '5f1a7b8fa9bf807da24d83bb', '68bab0deb93a14b62b0144a7', '68bab0deb93a14b62b0144a8', 'oo-embed-form-meggie-bergo-inner-1385', {
+      "mode": "page",
+      "action": "Klik untuk pemesanan",
+      "title": "Form Pemesanan",
+      "triggerPixel": true,
+      "triggerGtm": true
+    });
+    if (!window.jQuery) {
+      ! function(w, d, e, v, id, t, s) {
+        if (d.getElementById(id)) return;
+        t = d.createElement(e);
+        t.async = !0;
+        t.src = v;
+        t.id = id;
+        t.addEventListener('load', xEmbedScript);
+        s = d.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+    } else {
+      xEmbedScript();
+    }
+  } catch (e) {
+    xLogError(e);
+    throw e;
+  }
+</script>
+<!-- End OrderOnline Embed Code -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 px-6 bg-white" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Pertanyaan Umum</h2>
+      <div class="space-y-4">
+        <div class="faq-item bg-[#f0f0e6] p-4 rounded-lg">
+          <div class="faq-header flex justify-between items-center cursor-pointer font-semibold">
+            Bagaimana cara perawatan?
+            <i data-feather="chevron-down"></i>
+          </div>
+          <div class="faq-content mt-2 hidden">
+            <p>Cuci dengan air dingin dan deterjen lembut. Jemur di tempat teduh agar warna tidak pudar.</p>
+          </div>
+        </div>
+        <div class="faq-item bg-[#f0f0e6] p-4 rounded-lg">
+          <div class="faq-header flex justify-between items-center cursor-pointer font-semibold">
+            Apakah tersedia ukuran lain?
+            <i data-feather="chevron-down"></i>
+          </div>
+          <div class="faq-content mt-2 hidden">
+            <p>Saat ini hanya tersedia satu ukuran standar yang pas untuk semua bentuk wajah.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#004d4d] text-white py-10 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4">Meggie Bergo Inner</h3>
+          <p>Hijab praktis dan elegan untuk wanita modern.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2">Link Cepat</h4>
+          <ul class="space-y-1">
+            <li><a href="#" class="hover:underline">FAQ</a></li>
+            <li><a href="#" class="hover:underline">Kebijakan Privasi</a></li>
+            <li><a href="#" class="hover:underline">Syarat & Ketentuan</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2">Ikuti Kami</h4>
+          <div class="flex space-x-4">
+            <a href="#"><i data-feather="instagram"></i></a>
+            <a href="#"><i data-feather="facebook"></i></a>
+            <a href="#"><i data-feather="twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-teal-700 mt-8 pt-6 text-center text-sm">
+        © 2025 Meggie Bergo Inner. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky CTA -->
+  <div class="fixed bottom-0 left-0 right-0 bg-[#009688] text-white text-center py-3 z-50 md:hidden">
+    <a href="#order" class="block font-semibold">Pesan Sekarang – Rp 155.000</a>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script>
+    feather.replace();
+
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+
+    // FAQ Toggle
+    document.querySelectorAll('.faq-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const item = header.parentElement;
+        item.classList.toggle('active');
+        const content = item.querySelector('.faq-content');
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        const icon = header.querySelector('i');
+        icon.setAttribute('data-feather', content.style.display === 'block' ? 'chevron-up' : 'chevron-down');
+        feather.replace();
+      });
+    });
+
+    // Countdown Timer
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const target = new Date("May 30, 2025 00:00:00").getTime();
+      const diff = target - now;
+
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById("countdown").innerText = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+      if (diff < 0) clearInterval(interval);
+    }
+
+    const interval = setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // Video Play
+    function playVideo() {
+      const video = document.getElementById('product-video');
+      const btn = document.querySelector('.video-play-btn');
+      video.classList.remove('hidden');
+      video.play();
+      btn.style.display = 'none';
+    }
+
+    // Exit Intent Popup
+    let shown = false;
+    document.addEventListener('mouseleave', () => {
+      if (!shown) {
+        alert("Spesial promo menanti Anda! Dapatkan diskon tambahan 10%.");
+        shown = true;
+      }
+    });
+  </script>
+</body>
+</html>
